@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1># half-a-medium</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
