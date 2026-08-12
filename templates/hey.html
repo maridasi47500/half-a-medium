@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
+{% block montitre %}
+debut de mes mots: bienvenue dans psychic people city
+{% endblock %}
 {% block content %}
 <h1># half-a-medium</h1>
 {% for x in users | reverse %}
  <li>{{ x["first_name"]  }}</li>
 
 {% endfor %} 
+fin de mes mots : la nuit, la voyante révèle lidentité des gens dans la ville dans des requete sql
 {% endblock %}
 {% block liens %}
 <a href="/">welcome</a>
 {% endblock %}
+<a href="/add_one_user"> add one user</a><a href="/add_one_country"> add one country</a><a href="/add_one_city"> add one city</a><a href="/add_one_person"> add one person</a><a href="/add_one_cityhassql"> add one cityhassql</a><a href="/add_one_cityhassqlhaspeople"> add one cityhassqlhaspeople</a>

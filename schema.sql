@@ -26,3 +26,44 @@ INSERT OR IGNORE INTO contacts (contact_id, first_name, last_name, email, phone)
 VALUES( '1', 'anonyme', 'noname', 'anonymous@email.fr', '+2653546434');
 INSERT OR IGNORE INTO contacts (contact_id, first_name, last_name, email, phone)
 VALUES( '2', 'anne onim', 'onim', 'anne.onim@email.com', '+86877779898');
+create table if not exists user(
+        id integer primary key autoincrement,
+        username text,
+            phone text,
+            country_id text,
+            email text,
+            password text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
+create table if not exists country(
+        id integer primary key autoincrement,
+        name text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
+create table if not exists city(
+        id integer primary key autoincrement,
+        country_id text,
+            name text,
+            daypic text,
+            nightpic text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
+create table if not exists person(
+        id integer primary key autoincrement,
+        city_id text,
+            username text,
+            phone text,
+            country_id text,
+            fullname text,
+            dateofbirth text,
+            pic text,
+            address text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
+create table if not exists cityhassql(
+        id integer primary key autoincrement,
+        query text,
+            description text,
+            user_id text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
+create table if not exists cityhassqlhaspeople(
+        id integer primary key autoincrement,
+        person_id text,
+            cityhassql_id text
+      , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP                );
