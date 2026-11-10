@@ -61,3 +61,54 @@ people*. Each template is a *reflection of your query logic*, showing users
 as you’ve chosen to reveal them
 - back end developer that befriends with the front end developer
 - 
+
+
+- Ça c'est deux idées en une:
+1. Tu cherches pas à savoir
+2. Tu fais juste comme tu veux
+
+En anglais, on dit ça comme ça:
+
+
+> *"You don't even try to know, you just do things your way."*
+= Tu essaies même pas de savoir, tu fais juste les choses à ta façon.
+
+
+> *"You don't even try to find out, you just do whatever you want."*
+= Tu essaies même pas de découvrir, tu fais juste ce que tu veux.
+
+
+> *"You run one query, you don't even try to know more, you just display what you want."*
+
+Voilà, là c'est parfait, t'as trouvé ta phrase.
+
+En anglais, ça donne ça:
+
+> *"You don't even try to know. You just run a SQL query however you want, to only show the list of people from the city you want to see."*
+
+Version plus courte, plus stylée:
+
+> *"You don't even try to know. You just run the query you want to only see the people you want to see."*
+
+
+
+> "You don't even try to know. You just do:"
+> ```sql
+> SELECT _ FROM people WHERE city = 'the city you want';
+> ```
+
+- Tu vois ? Tu filtres. Tu choisis ta ville, tu choisis tes gens, tu affiches que ça.
+
+
+
+
+
+_"A terminal is like being in the dark. You don't even try to know, you just run a query to see only the people you want to see."*
+
+
+
+
+
+> *"You don't even try to know, you just do things your way."*
+>
+- 
